@@ -14,7 +14,7 @@ https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3
 
 ### CPU: i5-7300HQ 4c4t 2,50-3,50GHz
 ### GPU: GTX 1050 GDDR5 4GB / i630
-### RAM: 16GB DDR4 Dual-Channel 2400MHz SODIMM (2 x Micron 8ATF1G64HZ-2G3H1
+### RAM: 16GB DDR4 Dual-Channel 2400MHz SODIMM (2 x Micron 8ATF1G64HZ-2G3H1)
 ### SSD: ADATA SX8200PNP 256GB (PCI-E 3.0 x4)
 
 ## Credits:

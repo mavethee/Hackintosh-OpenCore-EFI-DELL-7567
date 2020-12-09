@@ -7,7 +7,7 @@ EFI premade of OpenCore bootloader for DELL-7567 is here!
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
 all needed files to install and run macOS on DELL Inspiron 15 7000 Gaming (7567)!
 
-https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3
+https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.4
 
 ## Description:
 <img src="https://zapodaj.net/images/124d3a17044e8.png" width="574" height="376"/>

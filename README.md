@@ -10,7 +10,7 @@ all needed files to install and run macOS on DELL Inspiron 15 7000 Gaming (7567)
 https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.4
 
 ## Description:
-<img src="https://zapodaj.net/images/124d3a17044e8.png" width="574" height="376"/>
+<img src="https://zapodaj.net/f0d340d9df0c2.png" width="574" height="376"/>
 
 ### CPU: i5-7300HQ 4c4t 2,50-3,50GHz
 ### GPU: GTX 1050 GDDR5 4GB / i630

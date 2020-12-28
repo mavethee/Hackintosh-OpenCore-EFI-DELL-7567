@@ -17,6 +17,15 @@ https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.4
 ### RAM: 16GB DDR4 Dual-Channel 2400MHz SODIMM (2 x Micron 8ATF1G64HZ-2G3H1)
 ### SSD: ADATA SX8200PNP 256GB (PCI-E 3.0 x4)
 
+## Important note:
+Depending on macOS version, you're planning to use:
+* Airportitlwm_Big_Sur for macOS 11 Big Sur,
+* Airportitlwm_Catalina for macOS 10.15 Catalina,
+* Airportitlwm_Mojave for macOS 10.14 Mojave,
+* Airportitlwm_High_Sierra for macOS 10.13 High Sierra.
+After that rename chosen Airportitlwm kext to Airportitlwm.kext
+
+
 ## Credits:
 
 ### Airportitlwm (1.1.0):

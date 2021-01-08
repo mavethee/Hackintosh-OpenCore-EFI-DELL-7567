@@ -3,7 +3,7 @@
 ## Hackintosh-OpenCore-DELL-7567
 EFI premade of OpenCore bootloader for DELL-7567 is here!
 
-## Current version - OpenCore 0.6.5 (7th December)
+## Current version - OpenCore 0.6.5 (4th January)
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
 all needed files to install and run macOS on DELL Inspiron 15 7000 Gaming (7567)!
 

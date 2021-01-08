@@ -80,8 +80,13 @@
 		<key>MmioWhitelist</key>
 		<array>
 		</array>
+		<key>Patch</key>
+		<array>
+		</array>
 		<key>Quirks</key>
 		<dict>
+			<key>AllowRelocationBlock</key>
+			<false/>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
@@ -136,12 +141,12 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>name</key>
-				<data>I2Rpc3BsYXk=</data>
 				<key>IOName</key>
 				<string>#display</string>
 				<key>class-code</key>
 				<data>/////w==</data>
+				<key>name</key>
+				<data>I2Rpc3BsYXk=</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
@@ -204,11 +209,65 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportItlwm</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AirportItlwm.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CPUFriend</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>CPUFriend.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/HibernationFixup</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>HibernationFixup.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -503,42 +562,6 @@
 				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/HibernationFixup</string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>HibernationFixup.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirportItlwm</string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>AirportItlwm_Big_Sur.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
 				<key>Enabled</key>
 				<false/>
 				<key>PlistPath</key>
@@ -550,7 +573,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>AirportItlwm_Catalina.kext</string>
+				<string>AirportItlwm_Big_Sur.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -598,6 +621,12 @@
 			<data></data>
 			<key>Cpuid1Mask</key>
 			<data></data>
+			<key>DummyPowerManagement</key>
+			<false/>
+			<key>MaxKernel</key>
+			<string></string>
+			<key>MinKernel</key>
+			<string></string>
 		</dict>
 		<key>Force</key>
 		<array>
@@ -623,13 +652,17 @@
 			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
-			<key>DummyPowerManagement</key>
+			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
+			<false/>
+			<key>ForceSecureBootScheme</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
+			<false/>
+			<key>LegacyCommpage</key>
 			<false/>
 			<key>PanicNoKextDump</key>
 			<true/>
@@ -666,36 +699,38 @@
 			<key>PickerAttributes</key>
 			<integer>1</integer>
 			<key>PickerAudioAssist</key>
-			<true/>
+			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
-			<true/>
+			<false/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
 			<integer>5</integer>
+			<key>PickerVariant</key>
+			<string>Modern</string>
 		</dict>
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
-			<true/>
+			<false/>
 			<key>ApplePanic</key>
 			<true/>
 			<key>DisableWatchDog</key>
-			<false/>
+			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
-			<integer>2147483650</integer>
+			<integer>0</integer>
 			<key>SerialInit</key>
 			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>67</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -709,6 +744,8 @@
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
+			<false/>
+			<key>BlacklistAppleUpdate</key>
 			<false/>
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
@@ -724,10 +761,10 @@
 			<data></data>
 			<key>PasswordSalt</key>
 			<data></data>
-			<key>SecureBootModel</key>
-			<string>Default</string>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
+			<key>SecureBootModel</key>
+			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -756,7 +793,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 alcid=21</string>
+				<string>keepsyms=1 debug=0x100 alcid=21 igfxonln=1 swd_panic=1 </string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
@@ -816,14 +853,18 @@
 	<dict>
 		<key>Automatic</key>
 		<true/>
+		<key>CustomMemory</key>
+		<false/>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
 			<string>C02711600CDJ1JH1F</string>
+			<key>ProcessorType</key>
+			<integer>0</integer>
 			<key>ROM</key>
-			<data>l8G/EPmr</data>
+			<data>TcGkXuzN</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
@@ -864,17 +905,19 @@
 			<key>AudioCodec</key>
 			<integer>0</integer>
 			<key>AudioDevice</key>
-			<string>PciRoot(0x0)/Pci(0x1b,0x0)</string>
+			<string>PciRoot(0x0)/Pci(0x1F,0x3)</string>
 			<key>AudioOut</key>
 			<integer>0</integer>
 			<key>AudioSupport</key>
 			<true/>
 			<key>MinimumVolume</key>
-			<integer>50</integer>
+			<integer>25</integer>
 			<key>PlayChime</key>
-			<true/>
+			<string>Enabled</string>
 			<key>VolumeAmplifier</key>
-			<integer>143</integer>
+			<integer>125</integer>
+			<key>SetupDelay</key>
+			<integer>0</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
@@ -913,6 +956,8 @@
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>DirectGopRendering</key>
+			<false/>
+			<key>ForceResolution</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
@@ -972,8 +1017,6 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>

@@ -3,11 +3,11 @@
 ## Hackintosh-OpenCore-DELL-7567
 EFI premade of OpenCore bootloader for DELL-7567 is here!
 
-## Current version - OpenCore 0.6.4 (7th December)
+## Current version - OpenCore 0.6.5 (7th December)
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
 all needed files to install and run macOS on DELL Inspiron 15 7000 Gaming (7567)!
 
-https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.4
+https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.5
 
 ## Description:
 <img src="https://zapodaj.net/images/f0d340d9df0c2.png" width="574" height="376"/>
@@ -18,6 +18,13 @@ https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.4
 ### SSD: ADATA SX8200PNP 256GB (PCI-E 3.0 x4)
 
 ## Important note:
+
+### Please note:
+Since OC 0.6.5, I decided to switch to RELEASE version, if you expierience any issues, switch to debug using Dortania's Guide:
+
+https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
+
+### WiFi and AirDrop stuff:
 Depending on macOS version, you're planning to use:
 * Airportitlwm_Big_Sur for macOS 11 Big Sur,
 * Airportitlwm_Catalina for macOS 10.15 Catalina,
@@ -30,13 +37,17 @@ After that rename chosen Airportitlwm kext to Airportitlwm.kext
 
 ### Airportitlwm (1.1.0):
 https://github.com/OpenIntelWireless/itlwm
-### AppleALC (1.5.5):
+### AppleALC (1.5.6):
 https://github.com/acidanthera/AppleALC
+### CPU Friend (1.2.3):
+https://github.com/acidanthera/CPUFriend/
+### HibernationFixup (1.3.9):
+https://github.com/acidanthera/HibernationFixup/
 ### IntelBluetoothFirmware (1.1.2):
 https://github.com/OpenIntelWireless/IntelBluetoothFirmware
 ### Lilu (1.5.0):
 https://github.com/acidanthera/Lilu/
-### NVMeFix (1.0.4):
+### NVMeFix (1.0.5):
 https://github.com/acidanthera/NVMeFix
 ### RealtekRTL8111 (2.3.0):
 https://github.com/Mieze/RTL8111_driver_for_OS_X
@@ -46,9 +57,9 @@ https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads
 https://github.com/acidanthera/VirtualSMC
 ### VoodooInput (1.0.9):
 https://github.com/acidanthera/VoodooInput
-### VoodooPS2 (2.1.9):
+### VoodooPS2 (2.2.0):
 https://github.com/acidanthera/VoodooPS2
-### WhateverGreen (1.4.5):
+### WhateverGreen (1.4.6):
 https://github.com/acidanthera/WhateverGreen
 ### OpenCanopy's resources:
 https://github.com/acidanthera/OcBinaryData

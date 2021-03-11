@@ -18,6 +18,8 @@ https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.5
 ### SSD: ADATA SX8200PNP 256GB (PCI-E 3.0 x4)
 
 ## Important note:
+My main DELL-7567 fried so won't be able keep up to date this repo anymore,
+planning to get ThinkPad x240 and continue Hackintosh repos soon.
 
 ### Please note:
 Since OC 0.6.5, I decided to switch to RELEASE version, if you expierience any issues, switch to debug using Dortania's Guide:

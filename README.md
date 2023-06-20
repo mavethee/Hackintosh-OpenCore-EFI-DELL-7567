@@ -3,22 +3,31 @@
 ## Hackintosh-OpenCore-DELL-7567
 EFI premade of OpenCore bootloader for DELL-7567 is here!
 
-## Current version - OpenCore 0.9.0 DEBUG
+## Current version - OpenCore 0.9.3 DEBUG
 Repository contains full ,,Plug-and-Play" EFI of OpenCore bootloader and
 all needed files to install and run macOS on DELL Inspiron 15 7000 Gaming (7567)!
 
-https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.0
+https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.3
 
-## Ventura note:
+## Sonoma NOTE:
+
+Apple still didn't remove any of kext for Kaby Lake's iGPUs.
+So if you wish to run Sonoma, at current state (as of Beta 1), make sure you'll use `MacBookPro15,1`
+
+See `SMBIOS` section below as for working iServices you're required to do so anyways.
+Might eventually with time just change it, depending what Apple will do.
+And technically thanks to Intel, KBL -> CFL spoof seems to be a thing.
+
+Too early to tell.
+
+P.S. Intel WiFi kexts are dead for now, use Ventura or replace WiFi card if it's a dealbreaker!
+
+## Ventura NOTE:
 
 Since it's Kaby Lake machine, it's one of the last machines of Apple's natively supported list hopefully so it probably requires
-a few tweaks and you're mostly good to go, one key difference I used MBP15,1 SMBIOS for Hey Siri thing working, lazy fuck, yes thats me! XD
+a few tweaks and you're mostly good to go.
+One key difference that after a while seems to be useful is using `MacBookPro15,1` SMBIOS for Hey Siri thing working, now it's macOS Sonoma way to go!
 Happy Hackintoshing!! ^^
-
-Using Alpha version of WiFi kexts for Ventura, check here for update since they are pretty often and its useless to update repo every time with one kext 
-or if you're not planning to use Ventura, switch to stable for your macOS version!:
-
-https://github.com/OpenIntelWireless/itlwm/releases
 
 ### SMBIOS:
 Present in repo SMBIOS is not purchased Apple's device but for own sake, I don't advice you to use it.

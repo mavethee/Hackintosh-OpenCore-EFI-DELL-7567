@@ -12,7 +12,7 @@ https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.3
 ## Sonoma NOTE:
 
 Apple still didn't remove any of kext for Kaby Lake's iGPUs.
-So if you wish to run Sonoma, at current state (as of Beta 2), make sure you'll use `MacBookPro15,1`
+So if you wish to run Sonoma, at current state (as of Beta 3/Public Beta 1), make sure you'll use `MacBookPro15,1`
 
 See `SMBIOS` section below as for working iServices you're required to do so anyways.
 Might eventually with time just change it, depending what Apple will do.
@@ -25,6 +25,8 @@ P.S. Intel WiFi kexts are dead for now, use Ventura or replace WiFi card if it's
 See progress here:
 
 https://github.com/OpenIntelWireless/itlwm/issues/883
+
+You can use HeliPort with itlwm instead for now.
 
 ## Ventura NOTE:
 
